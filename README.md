@@ -6,7 +6,7 @@ Grid New Api
 - CSS Grid
 - Api
 - React
-- MOobile-first
+- Mobile-first
 
 
 ### Links
