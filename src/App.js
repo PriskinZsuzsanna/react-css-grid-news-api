@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import axios from 'axios';
+import Item from './Item';
 
 function App() {
+
+  const [articles, setArticles] = useState([])
+  const [bg, setBg] = useState(true)
+
+  useEffect(() => {
+    axios.get('https://api.spaceflightnewsapi.net/v4/blogs/')
+      .then(res => setArticles(res.data.results))
+  }, [])
+
+  useEffect(() => {
+    console.log(articles)
+  }, [articles])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+
+        <h1>Space News</h1>
+        <div className="container">
+          {articles.map(item => (
+            <Item 
+            item={item}
+            key={item.id}
+            bg={bg}/>
+          ))}
+
+        </div>
+
+      </main>
     </div>
   );
 }
