@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-css-grid-news-api/static/css/main.7dba4017.css",
+    "main.js": "/react-css-grid-news-api/static/js/main.99d8e1a6.js",
+    "static/media/pexels-konevi-3789871.jpg": "/react-css-grid-news-api/static/media/pexels-konevi-3789871.f532b467220bb3dc3383.jpg",
+    "static/media/pexels-eberhard-grossgasteiger-1287142 (1).jpg": "/react-css-grid-news-api/static/media/pexels-eberhard-grossgasteiger-1287142 (1).4796bf3c9d8488a5198e.jpg",
+    "index.html": "/react-css-grid-news-api/index.html",
+    "main.7dba4017.css.map": "/react-css-grid-news-api/static/css/main.7dba4017.css.map",
+    "main.99d8e1a6.js.map": "/react-css-grid-news-api/static/js/main.99d8e1a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7dba4017.css",
+    "static/js/main.99d8e1a6.js"
+  ]
+}
